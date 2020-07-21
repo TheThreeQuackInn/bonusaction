@@ -1,335 +1,336 @@
 $primary: #005f69;
 $primary-light: #008d9c;
+$bg: #6d6e72;
 $font-body: Nunito, sans-serif;
 $font-heading: Norse, sans-serif;
 
 @font-face {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I9tAcVwo.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I9tAcVwo.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: Norse;
-  src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/e1473b80040eda7e3b3d92c57399e96ec43ced7f/fonts/Norse-Bold.woff);
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
+    font-family: Norse;
+    src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/e1473b80040eda7e3b3d92c57399e96ec43ced7f/fonts/Norse-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
 }
 
 .user-css {
-  h1,
-  h2,
-  h3 {
-    font-family: $font-heading;
-    letter-spacing: 0.2rem;
-    font-variant: small-caps;
-    color: $primary;
-    text-transform: none;
-    padding-left: 0;
-  }
-
-  h2 {
-    font-size: 2.5em;
-    border-bottom: none;
-  }
-
-  &.page {
-    background: #fff;
-    background-size: cover;
-    color: #333;
-    font-size: 1.7rem;
-    font-family: $font-body;
-  }
-
-  &-presentation {
-    // background: url(https://www.worldanvil.com/uploads/images/155e3f2df9f88c4bc07313e0d721ca0c.jpeg);
-    background: url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg);
-  }
-
-  &-followers-counter-number {
-    .header-title a {
-      display: block;
-    }
-  }
-
-  .search-form {
-    .typeahead-input {
-      background-color: #fff;
-    }
-
-    #search-button {
-      color: #fff;
-      padding: 3px 8px 2px 13px;
-      border-radius: 0 3px 3px 0;
-    }
-  }
-
-  hr {
-    border: 1px solid rgba(#333, 0.1);
-  }
-
-  .followers-counter,
-  .article-footer {
-    .btn,
-    .btn-success {
-      background-color: $primary !important;
-      border-radius: 0;
-      border: none !important;
-
-      &:hover {
-        background-color: $primary-light !important;
-        border: none !important;
-      }
-    }
-  }
-
-  .panel-body {
-    font-size: 1.8rem;
-  }
-
-  .btn-primary,
-  .btn {
-    background-color: $primary;
-    border-radius: 0;
-    border: none;
-    color: #fff;
-
-    &:hover {
-      background-color: $primary-light;
-      border: none;
-      color: #fff;
-    }
-  }
-
-  .author-item {
-    font-family: $font-body;
-  }
-
-  .article-panel {
-    padding: 2rem;
-
-    .heading {
-      color: #333;
-      font-size: 1.7rem;
-
-      &:hover {
+    h1,
+    h2,
+    h3 {
+        font-family: $font-heading;
+        letter-spacing: 0.2rem;
+        font-variant: small-caps;
         color: $primary;
-      }
+        text-transform: none;
+        padding-left: 0;
     }
 
-    .subheading {
-      color: #999;
-      font-style: normal;
-
-      .date {
-        font-style: normal;
-      }
+    h2 {
+        font-size: 2.5em;
+        border-bottom: none;
     }
-  }
 
-  .nav-strip {
-    background-color: $primary;
-    color: #fff;
+    &.page {
+        background: #fff;
+        background-size: cover;
+        color: #333;
+        font-size: 1.7rem;
+        font-family: $font-body;
+        background: url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg);
+    }
 
-    a {
-      color: #f1f1f1;
-      font-family: $font-body;
+    &-presentation {
+        background: $bg;
+    }
 
-      &:hover,
-      &:focus {
+    &-followers-counter-number {
+        .header-title a {
+            display: block;
+        }
+    }
+
+    .search-form {
+        .typeahead-input {
+            background-color: #fff;
+        }
+
+        #search-button {
+            color: #fff;
+            padding: 3px 8px 2px 13px;
+            border-radius: 0 3px 3px 0;
+        }
+    }
+
+    hr {
+        border: 1px solid rgba(#333, 0.1);
+    }
+
+    .followers-counter,
+    .article-footer {
+        .btn,
+        .btn-success {
+            background-color: $primary !important;
+            border-radius: 0;
+            border: none !important;
+
+            &:hover {
+                background-color: $primary-light !important;
+                border: none !important;
+            }
+        }
+    }
+
+    .panel-body {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary,
+    .btn {
+        background-color: $primary;
+        border-radius: 0;
+        border: none;
         color: #fff;
-      }
-    }
-  }
 
-  .timeline {
-    font-family: $font-body;
-
-    &:before {
-      background-color: $primary-light;
-    }
-
-    .minor .header-icon,
-    .important .header-icon {
-      background-color: #fff;
-      border-color: $primary;
-      color: $primary;
-
-      i {
-        font-size: 4rem;
-      }
-    }
-
-    li {
-      .tl-circ {
-        border-color: $primary;
-        background-color: #fff;
-      }
-
-      &.timeline-entry-inverted {
-        .timeline-panel {
-          &:after {
-            filter: drop-shadow(-6px 1px 4px rgba(0, 0, 0, 0.1));
-          }
+        &:hover {
+            background-color: $primary-light;
+            border: none;
+            color: #fff;
         }
-      }
+    }
 
-      .timeline-panel {
-        background-color: #fff;
-        border-color: $primary;
+    .author-item {
+        font-family: $font-body;
+    }
 
-        &:after {
-          border-left-color: #fff;
-          border-right-color: #fff;
-          filter: drop-shadow(6px 1px 4px rgba(0, 0, 0, 0.1));
+    .article-panel {
+        padding: 2rem;
+
+        .heading {
+            color: #333;
+            font-size: 1.7rem;
+
+            &:hover {
+                color: $primary;
+            }
         }
+
+        .subheading {
+            color: #999;
+            font-style: normal;
+
+            .date {
+                font-style: normal;
+            }
+        }
+    }
+
+    .nav-strip {
+        background-color: $primary;
+        color: #fff;
 
         a {
-          color: $primary;
-
-          &:hover,
-          &:focus {
-            color: $primary-light;
-          }
-        }
-
-        small {
-          color: #333;
-        }
-
-        h4 {
-          color: $primary;
-          font-family: $font-heading;
-          font-size: 3rem;
-          font-variant: small-caps;
-
-          small {
+            color: #f1f1f1;
             font-family: $font-body;
-            color: #333;
-            margin: 0.6em 0 0;
-            display: block;
-            font-size: 1.8rem;
-            font-variant: normal;
-            font-weight: 700;
-          }
+
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
         }
-      }
-    }
-  }
-
-  .text-muted {
-    color: #333;
-  }
-
-  .text-center.m-b-20 {
-    display: flex;
-    justify-content: center;
-
-    .btn {
-      margin: 0 0.5em;
-      border-radius: 3px;
     }
 
-    .fb_iframe_widget {
-      display: flex;
+    .timeline {
+        font-family: $font-body;
+
+        &:before {
+            background-color: $primary-light;
+        }
+
+        .minor .header-icon,
+        .important .header-icon {
+            background-color: #fff;
+            border-color: $primary;
+            color: $primary;
+
+            i {
+                font-size: 4rem;
+            }
+        }
+
+        li {
+            .tl-circ {
+                border-color: $primary;
+                background-color: #fff;
+            }
+
+            &.timeline-entry-inverted {
+                .timeline-panel {
+                    &:after {
+                        filter: drop-shadow(-6px 1px 4px rgba(0, 0, 0, 0.1));
+                    }
+                }
+            }
+
+            .timeline-panel {
+                background-color: #fff;
+                border-color: $primary;
+
+                &:after {
+                    border-left-color: #fff;
+                    border-right-color: #fff;
+                    filter: drop-shadow(6px 1px 4px rgba(0, 0, 0, 0.1));
+                }
+
+                a {
+                    color: $primary;
+
+                    &:hover,
+                    &:focus {
+                        color: $primary-light;
+                    }
+                }
+
+                small {
+                    color: #333;
+                }
+
+                h4 {
+                    color: $primary;
+                    font-family: $font-heading;
+                    font-size: 3rem;
+                    font-variant: small-caps;
+
+                    small {
+                        font-family: $font-body;
+                        color: #333;
+                        margin: 0.6em 0 0;
+                        display: block;
+                        font-size: 1.8rem;
+                        font-variant: normal;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
     }
-  }
+
+    .text-muted {
+        color: #333;
+    }
+
+    .text-center.m-b-20 {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            margin: 0 0.5em;
+            border-radius: 3px;
+        }
+
+        .fb_iframe_widget {
+            display: flex;
+        }
+    }
 }
 
 .user-css-extended {
-  h1,
-  h2,
-  h3 {
-    font-family: $font-heading;
-    letter-spacing: 0.2rem;
-    font-variant: small-caps;
-    color: $primary;
-    text-transform: none;
-    border: none;
-  }
+    h1,
+    h2,
+    h3 {
+        font-family: $font-heading;
+        letter-spacing: 0.2rem;
+        font-variant: small-caps;
+        color: $primary;
+        text-transform: none;
+        border: none;
+    }
 }
 
 .user-css,
 .user-css-extended {
-  h2 {
-    font-size: 2em;
-  }
+    h2 {
+        font-size: 2em;
+    }
 
-  .page {
-    background: #fff
-      url(https://thebonusaction.com/wp-content/uploads/2020/03/Stain__0000_01.png)
-      no-repeat;
-    background-position: right center;
-    background-size: 40%;
-    color: #333;
-    font-size: 1.7rem;
-    font-family: $font-body;
-  }
+    .page {
+        background: #fff
+            url(https://thebonusaction.com/wp-content/uploads/2020/03/Stain__0000_01.png)
+            no-repeat;
+        background-position: right center;
+        background-size: 40%;
+        color: #333;
+        font-size: 1.7rem;
+        font-family: $font-body;
+    }
 
-  .nav-tabs li {
+    .nav-tabs li {
+        a {
+            background-color: $primary;
+            color: #fff;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+
+        &.active a {
+            background-color: $primary-light;
+            color: #fff;
+        }
+    }
+
     a {
-      background-color: $primary;
-      color: #fff;
+        color: $primary;
+        transition: 0.2s all;
 
-      &:hover {
-        box-shadow: none;
-      }
+        &:hover {
+            color: $primary-light;
+            text-decoration: none;
+            transition: 0.2s all;
+        }
     }
 
-    &.active a {
-      background-color: $primary-light;
-      color: #fff;
+    p {
+        font-size: 1.8rem;
     }
-  }
 
-  a {
-    color: $primary;
-    transition: 0.2s all;
-
-    &:hover {
-      color: $primary-light;
-      text-decoration: none;
-      transition: 0.2s all;
+    .list-box i {
+        color: #333;
     }
-  }
 
-  p {
-    font-size: 1.8rem;
-  }
-
-  .list-box i {
-    color: #333;
-  }
-
-  h4 {
-    color: #333;
-  }
-
-  h5,
-  h6 {
-    font-family: $font-body;
-    text-transform: none;
-
-    i {
-      color: #333;
+    h4 {
+        color: #333;
     }
-  }
 
-  .category-list {
-    padding: 0;
-  }
+    h5,
+    h6 {
+        font-family: $font-body;
+        text-transform: none;
+
+        i {
+            color: #333;
+        }
+    }
+
+    .category-list {
+        padding: 0;
+    }
 }
 
 .user-css .backtoworld a {
-  background-color: $primary;
+    background-color: $primary;
 
-  &:hover {
-    background-color: $primary-light;
-  }
+    &:hover {
+        background-color: $primary-light;
+    }
 }
