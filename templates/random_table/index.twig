@@ -1,0 +1,58 @@
+{% set items = variables.items | trim | split('\r\n') %}
+{% set size = items | length %}
+{% set half = size / 2 %}
+
+<div class="random-table">
+	<h1>{{ variables.name }}</h1>
+    <div class="table-random-container">
+        <textarea class="d-none hidden random-table-data">
+            {% for key,value in items %}
+                {% if key == 0 %}
+                    [["{{ key + 1 }}", "{{ value }}"],
+                {% else %}
+                    ["{{ key + 1 }}","{{ value }}"]{% if key + 1 != size %},{% endif %}
+                {% endif %}
+            {% endfor %}]
+        </textarea>
+        <a href="#" class="btn-random-roll btn btn-lg btn-block btn-primary">Roll the Dice</a>
+        <div class="table-random-results"></div>
+        <div class="table__container">
+            <table class="table table-random table-striped">
+                <thead>
+                    <tr>
+                        <th>d{{size}}</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for key,value in items|slice(0,half) %}
+                <tr class="{{key % 2 == 0 ? "even" : "odd"}}">
+                    <td class="dice-value">
+                        <span class="user-row">{{ key + 1 }}</span>
+                    </td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <table class="table table-random table-striped">
+                <thead>
+                    <tr>
+                        <th>d{{size}}</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for key,value in items|slice(half,size) %}
+                <tr class="{{key % 2 == 0 ? "even" : "odd"}}">
+                    <td class="dice-value">
+                         <span class="user-row">{{ key + half + 1}}</span>
+                    </td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

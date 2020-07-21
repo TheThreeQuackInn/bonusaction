@@ -1,0 +1,55 @@
+@import "../../css/variables.scss";
+
+@font-face {
+    font-family: Norse;
+    src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/e1473b80040eda7e3b3d92c57399e96ec43ced7f/fonts/Norse-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+h1 {
+    font-family: Norse;
+}
+
+.table__container {
+    display: flex;
+
+    .table {
+        background-color: #fff;
+        color: #333;
+        font-family: NunitoSans-Regular;
+
+        th {
+            font-weight: 900;
+        }
+
+        > tbody > tr > td {
+            border-top: none;
+        }
+    }
+
+    .table-striped tbody tr.odd {
+        background-color: $lightblue;
+    }
+}
+
+.btn-random-roll {
+    margin: 1rem 0;
+}
+
+.table-random-results {
+    margin-bottom: 1rem;
+}
+
+.btn.btn-primary.btn-random-roll {
+    background-color: $primary !important;
+    color: #fff !important;
+    border: none !important;
+
+    &:hover {
+        background-color: $primary-light !important;
+        color: #fff !important;
+        border: none !important;
+    }
+}
