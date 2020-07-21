@@ -1,0 +1,36 @@
+.statblock__inner {
+    display: flex;
+    background-color: #efefef;
+    padding: 2em;
+    color: #333;
+    font-family: NunitoSans-Regular;
+}
+.statblock__inner h1 {
+    color: #005f69;
+    margin: 0;
+    font-variant: small-caps;
+    letter-spacing: 0.2rem;
+    font-family: Norse;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.statblock__description {
+    margin: 0.5em 0;
+    font-size: 1rem;
+}
+.statblock__description p {
+    white-space: pre-wrap;
+    margin: 0;
+}
+.statblock__attunement,
+.statblock__subtitle {
+    font-style: italic;
+    margin: 0;
+    font-size: 1rem;
+}
+.statblock__left {
+    flex: 1 1 60%;
+}
+.statblock__right {
+    flex: 0 1 40%;
+}

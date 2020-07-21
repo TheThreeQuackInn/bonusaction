@@ -1,0 +1,32 @@
+<div class="statblock__inner">
+  <div class="statblock__left">
+    <h1>{{ variables.name }}</h1>
+    <p class="statblock__subtitle">
+      <span>{{variables.rarity}}</span>
+      {% if variables.type %}
+           <span class="statblock__type">{{variables.type}}</span>
+      {% endif %}
+      {% if variables.properties %}
+          <span class="statblock__properties">({{variables.properties}})</span>
+      {% endif %}
+    </p>
+    {% if variables.attunement %}
+    <p class="statblock__attunement">
+    <span>Requires attunement</span>
+    {% if variables.attunement_by %}
+        <span>by a {{variables.attunement_by}}</span>
+    {% endif %}
+    </p>
+    {% endif %}
+    <div class="statblock__description">
+      <p>{{variables.abilities}}</p>
+    </div>
+  </div>
+  <div class="statblock__right">
+    {% if variables.image %}
+    <div class="statblock__image">
+      [img:{{variables.image}}]
+    </div>
+    {% endif %}
+  </div>
+</div>
