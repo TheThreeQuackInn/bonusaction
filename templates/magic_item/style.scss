@@ -1,11 +1,18 @@
 @import "../../css/variables.scss";
 
+.statblock__container {
+    border-top: 10px solid $border-color;
+    border-bottom: 10px solid $border-color;
+}
+
 .statblock__inner {
     display: flex;
     background-color: #efefef;
     padding: 2em;
     color: #333;
     font-family: NunitoSans-Regular;
+    max-width: 99%;
+    margin: 0 auto;
 }
 .statblock__inner h1 {
     color: $primary;
@@ -21,8 +28,12 @@
     font-size: 1rem;
 }
 .statblock__description p {
-    white-space: pre-wrap;
+    white-space: pre-line;
     margin: 0;
+
+    b {
+        font-weight: 900;
+    }
 }
 .statblock__attunement,
 .statblock__subtitle {
@@ -32,7 +43,16 @@
 }
 .statblock__left {
     flex: 1 1 60%;
+    padding: 0 2em 0 0;
 }
 .statblock__right {
     flex: 0 1 40%;
+}
+.statblock__image {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        border-radius: 10px;
+    }
 }
