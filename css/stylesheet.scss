@@ -27,10 +27,28 @@
     font-display: fallback;
 }
 
+@font-face {
+    font-family: 'Crimson';
+    src: url('Crimson-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('Crimson-Semibold.woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 .user-css {
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
         font-family: $font-heading;
         letter-spacing: 0.2rem;
         font-variant: small-caps;
@@ -240,17 +258,17 @@
     }
 
     .text-center.m-b-20 {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
 
         .btn {
             margin: 0 0.5em;
             border-radius: 3px;
         }
 
-        .fb_iframe_widget {
-            display: flex;
-        }
+        // .fb_iframe_widget {
+        //     display: flex;
+        // }
     }
 }
 
@@ -270,7 +288,15 @@
 .user-css,
 .user-css-extended {
     h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
         font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.6em;
     }
 
     .page {
@@ -340,6 +366,7 @@
     .world-title {
         font-family: $font-heading-alt;
         font-variant: normal;
+        font-size: 3em;
     }
 
     .backtoworld a {
