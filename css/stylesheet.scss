@@ -28,27 +28,24 @@
 }
 
 @font-face {
-    font-family: 'Crimson';
-    src: url('Crimson-Bold.woff2');
+    font-family: Crimson;
+    src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/a4042f5890d8870ab38aec43494961ffe247c07e/fonts/Crimson-Bold.woff);
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Crimson';
-    src: url('Crimson-Semibold.woff2');
-    font-weight: 600;
+    font-family: Crimson;
+    src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/00548931bbb0999bf2c8950547c97cfa0e890b25/fonts/Crimson-Roman.woff);
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-
 .user-css {
     h1,
-    h2,
-    h3,
-    h4 {
+    h2 {
         font-family: $font-heading;
         letter-spacing: 0.2rem;
         font-variant: small-caps;
@@ -60,6 +57,10 @@
     h2 {
         font-size: 2.5em;
         border-bottom: none;
+    }
+
+    p {
+        line-height: 1.4em;
     }
 
     &.page {
@@ -84,6 +85,10 @@
     .search-form {
         .typeahead-input {
             background-color: #fff;
+        }
+
+        .form-group {
+            display: flex;
         }
 
         #search-button {
@@ -274,8 +279,7 @@
 
 .user-css-extended {
     h1,
-    h2,
-    h3 {
+    h2 {
         font-family: $font-heading;
         letter-spacing: 0.2rem;
         font-variant: small-caps;
@@ -292,11 +296,17 @@
     }
 
     h3 {
-        font-size: 2em;
+        font-family: $font-body;
+        font-size: 2.3rem;
+        color: $primary;
+        margin: 0.3em 0;
     }
 
     h4 {
-        font-size: 1.6em;
+        font-size: 2rem;
+        color: $primary;
+        font-family: $font-body;
+        margin: 0.3em 0;
     }
 
     .page {
@@ -375,5 +385,14 @@
         &:hover {
             background-color: $primary-light;
         }
+    }
+
+    .article-content {
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+
+    .tab-pane {
+        padding-top: 0;
     }
 }
