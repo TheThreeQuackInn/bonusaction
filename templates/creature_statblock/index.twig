@@ -1,0 +1,143 @@
+<div class="statblock__container">
+    <div class="statblock__inner">
+        <div class="statblock__left">
+            <div class="creature__header">
+                <h1>
+                    {{ variables.name }}
+                </h1>
+                <p class="statblock__subtitle">
+                    {{ variables.creature_type }}, {{ variables.alignment }}
+                </p>
+                <div class="statblock__separator"></div>
+            </div>
+            <div class="creature__stats">
+                {% if variables.armor_class_ac is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Armor Class</span>
+                        <span>{{ variables.armor_class_ac }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.hit_points_hp is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Hit Points</span>
+                        <span>{{ variables.hit_points_hp }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.speed is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Speed</span>
+                        <span>{{ variables.speed }} ft.</span>
+                    </div>
+                {% endif %}
+                <div class="statblock__separator"></div>
+            </div>
+            <div class="creature__skills">
+                <div class="creature__skill">
+                    <p class="creature__skill-name">
+                        STR
+                    </p>
+                    <p class="creature__skill-value">
+                        {{ variables.str }}
+                    </p>
+                </div>
+                <div class="creature__skill">
+                    <p class="creature__skill-name">
+                        DEX
+                    </p>
+                    <p class="creature__skill-value">
+                        {{ variables.dex }}
+                    </p>
+                </div>
+                <div class="creature__skill">
+                    <p class="creature__skill-name">
+                        CON
+                    </p>
+                    <p class="creature__skill-value">
+                        {{ variables.con }}
+                    </p>
+                </div>
+                <div class="creature__skill">
+                    <p class="creature__skill-name">
+                        INT
+                    </p>
+                    <p class="creature__skill-value">
+                        {{ variables.int }}
+                    </p>
+                </div>
+                <div class="creature__skill">
+                    <p class="creature__skill-name">
+                        WIS
+                    </p>
+                    <p class="creature__skill-value">
+                        {{ variables.wis }}
+                    </p>
+                </div>
+                <div class="creature__skill">
+                    <p class="creature__skill-name">
+                        CHA
+                    </p>
+                    <p class="creature__skill-value">
+                        {{ variables.cha }}
+                    </p>
+                </div>
+            </div>
+            <div class="statblock__separator"></div>
+            <div class="creature__meta">
+                {% if variables.skills is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Skills</span>
+                        <span>{{ variables.skills }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.damage_resistances is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Damage resistances</span>
+                        <span>{{ variables.damage_resistances }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.condition_immunities is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Condition immunities</span>
+                        <span>{{ variables.condition_immunities }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.senses is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Senses</span>
+                        <span>{{ variables.senses }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.languages is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Languages</span>
+                        <span>{{ variables.languages }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.challenge_rating_cr is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Challenge</span>
+                        <span>{{ variables.challenge_rating_cr }}</span>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="statblock__separator"></div>
+
+            {% if variables.abilities is defined %}
+                <div class="creature__abilities">
+                    {{ variables.abilities }}
+                </div>
+            {% endif %}
+
+            {% if variables.actions is defined %}
+                <div class="creature__actions">
+                    <h3 class="creature__actions-title">
+                        Actions
+                    </h3>
+                    <div>
+                        {{ variables.actions }}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

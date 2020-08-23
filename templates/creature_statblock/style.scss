@@ -1,0 +1,135 @@
+@import "../../css/variables.scss";
+
+@font-face {
+    font-family: Norse;
+    src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/e1473b80040eda7e3b3d92c57399e96ec43ced7f/fonts/Norse-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+.statblock__container {
+    border-top: 10px solid $border-color;
+    border-bottom: 10px solid $border-color;
+    color: $primary;
+}
+
+.statblock__inner {
+    display: flex;
+    background-color: #efefef;
+    padding: 2em;
+    color: #333;
+    font-family: $font-body;
+    max-width: 99%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.statblock__inner h1 {
+    color: $primary;
+    margin: 0;
+    font-variant: small-caps;
+    letter-spacing: 0.2rem;
+    font-family: Norse;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.statblock__description {
+    margin: 0.5em 0;
+    font-size: 1rem;
+}
+.statblock__description p {
+    white-space: pre-line;
+    margin: 0;
+
+    b {
+        font-weight: 900;
+    }
+}
+
+.statblock__subtitle {
+    font-style: italic;
+    margin: 0;
+    font-size: 1rem;
+    color: $primary;
+}
+.statblock__left {
+    flex: 1 1 60%;
+    padding: 0 2em 0 0;
+}
+.statblock__right {
+    flex: 0 1 40%;
+}
+.statblock__image {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+.statblock {
+    &__separator {
+        width: 100%;
+        position: relative;
+        background-color: $primary;
+        margin: 1em 0 1em 8px;
+        height: 16px;
+
+        &:after {
+            transform: rotate(0);
+            width: 0;
+            right: 100%;
+            top: 0;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: transparent;
+            border-right-color: $primary;
+            border-width: 8px;
+            margin-top: 0px;
+        }
+    }
+
+    &__line {
+        color: $primary;
+        font-size: 1.2rem;
+
+        .bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.creature {
+    &__skills {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__skill {
+        text-align: center;
+        font-size: 1.2rem;
+        color: $primary;
+
+        &-name {
+            font-weight: 700;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__actions {
+        &-title {
+            color: $primary;
+            border-bottom: 1px solid $primary;
+            font-size: 1.3rem;
+        }
+    }
+}
