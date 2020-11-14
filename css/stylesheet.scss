@@ -43,6 +43,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Tahoma";
+    src: url(https://rawcdn.githack.com/TheThreeQuackInn/bonusaction/b5e437b0fb04a1ca801e9c3bad372f5704f0b0e3/fonts/Tahoma-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 .user-css {
     h1,
     h2 {
@@ -70,10 +78,29 @@
         font-size: 1.7rem;
         font-family: $font-body;
         background: url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg);
+        border: 2px $primary solid;
+        border-radius: $border-radius;
     }
 
     &-presentation {
-        background: $bg;
+        background: url(https://www.worldanvil.com/uploads/images/b9c5adb195a34f33831c37120044db1d.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        .world-navigation-palette-trigger {
+            color: $primary;
+            border-radius: $border-radius;
+            transition: 0.1s all ease-in-out;
+            padding-bottom: 7px;
+
+            &-active {
+                transition: left 0.5s;
+            }
+
+            &:hover {
+                color: $primary-light;
+            }
+        }
     }
 
     &-followers-counter-number {
@@ -381,15 +408,62 @@
 
     .backtoworld a {
         background-color: $primary;
+        font-family: $font-body;
+        left: -25px;
+        border-radius: $border-radius;
+        padding: 9px 15px;
 
         &:hover {
             background-color: $primary-light;
+            box-shadow: 2px 2px 5px rgba(#444, 0.5);
         }
     }
 
     .article-content {
         font-size: 1.1em;
         line-height: 1.4em;
+
+        .table-header {
+            font-family: $font-table-header;
+            font-variant: small-caps;
+            font-weight: 700;
+            font-size: 2.1rem;
+        }
+
+        table {
+            background: transparent;
+            table-layout: fixed;
+
+            th {
+                background: transparent;
+                color: #000;
+                transition: 0.15s all ease-in;
+                font-family: $font-body;
+                font-weight: 900;
+                border: none;
+                text-align: left;
+            }
+
+            tr {
+                &:hover {
+                    background: transparent;
+                }
+            }
+
+            td {
+                font-family: $font-body;
+                font-weight: 400;
+                background: transparent;
+            }
+        }
+
+        tr:nth-child(even) td {
+            background-color: rgba($primary, 0.3);
+        }
+
+        tr:nth-of-type(odd) {
+            background-color: transparent;
+        }
     }
 
     .tab-pane {
@@ -405,3 +479,5 @@
         font-style: italic;
     }
 }
+
+@import "nav.scss";
