@@ -1,0 +1,30 @@
+.user-css {
+    .bookcover {
+        width: 280px;
+        height: 200px;
+
+        img {
+            transition: 0.2s opacity ease-in-out;
+        }
+
+        a:hover {
+            img {
+                transition: 0.2s opacity ease-in-out;
+            }
+
+            .booktitle {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .booktitle {
+        background-color: transparent;
+        color: #fff;
+        left: 0;
+        right: 0;
+        text-align: center;
+        max-width: none;
+        text-align: center;
+    }
+}

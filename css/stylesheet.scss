@@ -88,6 +88,7 @@
         background-attachment: fixed;
 
         .world-navigation-palette-trigger {
+            display: none;
             color: $primary;
             border-radius: $border-radius;
             transition: 0.1s all ease-in-out;
@@ -480,4 +481,6 @@
     }
 }
 
-@import "nav.scss";
+@import "../templates/navigation/nav.scss";
+@import "../scss/bookcover.scss";
+@import "../scss/random-table.scss";

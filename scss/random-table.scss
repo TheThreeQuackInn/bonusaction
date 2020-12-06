@@ -1,0 +1,63 @@
+.user-css {
+    .thales-table {
+        border: none;
+        color: #333;
+        font-family: NunitoSans-Regular;
+
+        th {
+            font-weight: 900;
+        }
+
+        > tbody > tr > td {
+            border: none;
+        }
+
+        thead th .thales-column-title-container .thales-column-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    .thales-wrapper {
+        tbody {
+            font-size: 1.5rem;
+        }
+
+        tr.thales-row {
+            &:hover {
+                &:nth-child(odd) {
+                    background-color: transparent;
+                }
+
+                &:nth-child(even) {
+                    background-color: rgba($primary, 0.3);
+                }
+            }
+
+            .thales-cell {
+                border: none;
+            }
+        }
+    }
+
+    .thales-roll-group {
+        background-color: transparent;
+
+        .thales-roll-button {
+            background-color: $primary;
+            color: #fff;
+            border: none;
+            transition: 0.2s all ease-in-out;
+        }
+
+        &:hover {
+            background-color: transparent;
+
+            .thales-roll-button {
+                background-color: $primary-light;
+                color: #fff;
+                border: none;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+    }
+}
