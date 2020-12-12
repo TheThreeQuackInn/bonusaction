@@ -9,7 +9,8 @@
         transition: width 0.2s linear;
         padding: 0;
         width: 59px;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         @media screen and (max-width: 768px) {
             height: auto;
@@ -29,6 +30,13 @@
 
             li {
                 display: flex;
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                        transition: 0.2s opacity ease-in-out;
+                    }
+                }
             }
 
             .ba-nav-bar__item {
@@ -77,6 +85,8 @@
                     width: 32px;
                     height: 32px;
                     max-width: unset;
+                    opacity: 0.5;
+                    transition: 0.2s opacity ease-in-out;
                 }
             }
         }
@@ -113,6 +123,37 @@
                 pointer-events: none;
                 text-decoration: none;
             }
+        }
+    }
+
+    .nav-strip {
+        background-color: $primary;
+        color: #fff;
+
+        a {
+            color: #f1f1f1;
+            font-family: $font-body;
+
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+
+    .nav-tabs li {
+        a {
+            background-color: $primary;
+            color: #fff;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+
+        &.active a {
+            background-color: $primary-light;
+            color: #fff;
         }
     }
 }

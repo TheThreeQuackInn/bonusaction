@@ -1,0 +1,37 @@
+.user-css {
+    .btn-primary,
+    .btn {
+        background-color: $primary;
+        border-radius: 0;
+        border: none;
+        color: #fff;
+
+        &:hover {
+            background-color: $primary-light;
+            border: none;
+            color: #fff;
+        }
+    }
+
+    .followers-counter,
+    .article-footer {
+        .btn,
+        .btn-success {
+            background-color: $primary !important;
+            border-radius: 0;
+            border: none !important;
+
+            &:hover {
+                background-color: $primary-light !important;
+                border: none !important;
+            }
+        }
+    }
+
+    .text-center.m-b-20 {
+        .btn {
+            margin: 0 0.5em;
+            border-radius: 3px;
+        }
+    }
+}

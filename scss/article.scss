@@ -1,0 +1,76 @@
+.user-css {
+    .article-panel {
+        padding: 2rem;
+        background-color: #fff;
+
+        .heading {
+            color: #333;
+            font-size: 1.7rem;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .subheading {
+            color: #999;
+            font-style: normal;
+
+            .date {
+                font-style: normal;
+            }
+        }
+    }
+
+    .article-subheading {
+        padding-left: 0;
+        font-style: italic;
+    }
+
+    .article-content {
+        font-size: 1.1em;
+        line-height: 1.4em;
+
+        .table-header {
+            font-family: $font-table-header;
+            font-variant: small-caps;
+            font-weight: 700;
+            font-size: 2.1rem;
+        }
+
+        table {
+            background: transparent;
+            table-layout: fixed;
+
+            th {
+                background: transparent;
+                color: #000;
+                transition: 0.15s all ease-in;
+                font-family: $font-body;
+                font-weight: 900;
+                border: none;
+                text-align: left;
+            }
+
+            tr {
+                &:hover {
+                    background: transparent;
+                }
+            }
+
+            td {
+                font-family: $font-body;
+                font-weight: 400;
+                background: transparent;
+            }
+        }
+
+        tr:nth-child(even) td {
+            background-color: rgba($primary, 0.3);
+        }
+
+        tr:nth-of-type(odd) {
+            background-color: transparent;
+        }
+    }
+}

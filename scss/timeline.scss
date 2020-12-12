@@ -1,0 +1,76 @@
+.user-css {
+    .timeline {
+        font-family: $font-body;
+
+        &:before {
+            background-color: $primary-light;
+        }
+
+        .minor .header-icon,
+        .important .header-icon {
+            background-color: #fff;
+            border-color: $primary;
+            color: $primary;
+
+            i {
+                font-size: 4rem;
+            }
+        }
+
+        li {
+            .tl-circ {
+                border-color: $primary;
+                background-color: #fff;
+            }
+
+            &.timeline-entry-inverted {
+                .timeline-panel {
+                    &:after {
+                        filter: drop-shadow(-6px 1px 4px rgba(0, 0, 0, 0.1));
+                    }
+                }
+            }
+
+            .timeline-panel {
+                background-color: #fff;
+                border-color: $primary;
+
+                &:after {
+                    border-left-color: #fff;
+                    border-right-color: #fff;
+                    filter: drop-shadow(6px 1px 4px rgba(0, 0, 0, 0.1));
+                }
+
+                a {
+                    color: $primary;
+
+                    &:hover,
+                    &:focus {
+                        color: $primary-light;
+                    }
+                }
+
+                small {
+                    color: #333;
+                }
+
+                h4 {
+                    color: $primary;
+                    font-family: $font-heading;
+                    font-size: 3rem;
+                    font-variant: small-caps;
+
+                    small {
+                        font-family: $font-body;
+                        color: #333;
+                        margin: 0.6em 0 0;
+                        display: block;
+                        font-size: 1.8rem;
+                        font-variant: normal;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

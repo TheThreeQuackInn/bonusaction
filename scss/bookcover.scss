@@ -4,16 +4,27 @@
         height: 200px;
 
         img {
+            opacity: 0.9;
             transition: 0.2s opacity ease-in-out;
         }
 
         a:hover {
-            img {
+            img,
+            .booktitle {
                 transition: 0.2s opacity ease-in-out;
             }
 
             .booktitle {
+                opacity: 1;
                 background-color: transparent;
+                transition: 0.2s opacity ease-in-out;
+            }
+
+            .excerpt {
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
             }
         }
     }
@@ -26,5 +37,8 @@
         text-align: center;
         max-width: none;
         text-align: center;
+        opacity: 0.9;
+        transition: 0.2s opacity ease-in-out;
+        text-transform: none;
     }
 }

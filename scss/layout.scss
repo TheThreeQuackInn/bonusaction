@@ -1,0 +1,38 @@
+.user-css {
+    hr {
+        border: 1px solid rgba(#333, 0.1);
+    }
+
+    .text-muted {
+        color: #333;
+    }
+
+    .page {
+        background: transparent
+            url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg)
+            no-repeat;
+        color: #333;
+        font-size: 1.7rem;
+        font-family: $font-body;
+    }
+
+    .list-box i {
+        color: #333;
+    }
+
+    .category-list {
+        padding: 0;
+    }
+
+    dl {
+        margin-bottom: 0;
+    }
+
+    .tab-pane {
+        padding-top: 0;
+    }
+
+    .world-content .user-custom-content img {
+        height: 208px;
+    }
+}

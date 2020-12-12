@@ -1,0 +1,52 @@
+.user-css {
+    &-extended {
+        h1,
+        h2 {
+            font-family: $font-heading;
+            letter-spacing: 0.2rem;
+            font-variant: small-caps;
+            color: $primary;
+            text-transform: none;
+            border: none;
+        }
+    }
+
+    &.page {
+        background: #fff;
+        background-size: cover;
+        color: #333;
+        font-size: 1.7rem;
+        font-family: $font-body;
+        background: url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg);
+        border: 2px $primary solid;
+        border-radius: $border-radius;
+    }
+
+    &-presentation {
+        background: url(https://www.worldanvil.com/uploads/images/b9c5adb195a34f33831c37120044db1d.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        .world-navigation-palette-trigger {
+            display: none;
+            color: $primary;
+            border-radius: $border-radius;
+            transition: 0.1s all ease-in-out;
+            padding-bottom: 7px;
+
+            &-active {
+                transition: left 0.5s;
+            }
+
+            &:hover {
+                color: $primary-light;
+            }
+        }
+    }
+
+    &-followers-counter-number {
+        .header-title a {
+            display: block;
+        }
+    }
+}
