@@ -32,7 +32,14 @@
         padding-top: 0;
     }
 
-    .world-content .user-custom-content img {
-        height: 208px;
+    .world-content .user-custom-content {
+        img {
+            height: 208px;
+        }
+
+        // Hacky way of setting the correct height for the blocks
+        .hidden-xs {
+            height: 242px;
+        }
     }
 }
