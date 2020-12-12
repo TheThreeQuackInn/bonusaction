@@ -5,19 +5,43 @@
         left: 0;
         top: 0;
         bottom: 0;
-        background-color: #fff;
+        background-color: $nav-bg;
         transition: width 0.2s linear;
         padding: 0;
         width: 59px;
+        overflow: auto;
+
+        @media screen and (max-width: 768px) {
+            height: auto;
+            bottom: auto;
+            top: 35%;
+            z-index: 1000;
+        }
 
         &:hover {
             width: 210px;
+            top: 0;
+
+            @media screen and (max-width: 768px) {
+                height: 100%;
+                bottom: 0;
+            }
+
+            li {
+                display: flex;
+            }
 
             .ba-nav-bar__item {
                 opacity: 1;
                 visibility: visible;
                 transition: 0.3s opacity ease-in-out;
                 transition-delay: 0.1s;
+            }
+
+            @media screen and (max-width: 768px) {
+                .ba-nav-bar__toggler-text {
+                    display: block;
+                }
             }
         }
 
@@ -27,8 +51,27 @@
             margin: 0;
 
             li {
-                display: flex;
+                display: none;
                 align-items: center;
+
+                @media screen and (max-width: 768px) {
+                    &:nth-child(1) {
+                        display: flex;
+                    }
+                }
+
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                }
+
+                a {
+                    color: #fff;
+
+                    &:hover,
+                    &:focus {
+                        color: darken(#fff, 20%);
+                    }
+                }
 
                 img {
                     width: 32px;
@@ -47,6 +90,29 @@
             visibility: hidden;
             transition: 0.3s opacity ease-in-out;
             transition-delay: 0.1s;
+        }
+
+        &__toggler {
+            display: none;
+
+            &-text {
+                display: none;
+                color: #fff;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+
+        .image-thumb-container {
+            display: flex;
+
+            a {
+                display: inline-block;
+                pointer-events: none;
+                text-decoration: none;
+            }
         }
     }
 }
