@@ -1,4 +1,13 @@
 .user-css {
+    @keyframes slideIn {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 60px;
+        }
+    }
+
     .ba-nav-bar {
         height: 100%;
         position: fixed;
@@ -11,6 +20,7 @@
         width: 59px;
         overflow-y: auto;
         overflow-x: hidden;
+        z-index: 1000;
 
         @media screen and (max-width: 768px) {
             height: auto;
@@ -20,7 +30,7 @@
         }
 
         &:hover {
-            width: 210px;
+            width: 220px;
             top: 0;
 
             @media screen and (max-width: 768px) {
@@ -30,6 +40,21 @@
 
             li {
                 display: flex;
+
+                @for $i from 2 through 13 {
+                    &:nth-child(#{$i}) {
+                        a {
+                            animation: slideIn
+                                0.5s
+                                ease
+                                #{$i *
+                                0.05}s
+                                1
+                                normal
+                                forwards;
+                        }
+                    }
+                }
 
                 &:hover {
                     img {
@@ -61,6 +86,7 @@
             li {
                 display: none;
                 align-items: center;
+                position: relative;
 
                 @media screen and (max-width: 768px) {
                     &:nth-child(1) {
@@ -73,11 +99,13 @@
                 }
 
                 a {
-                    color: #fff;
+                    color: darken(#fff, 20%);
+                    position: absolute;
+                    left: -100%;
 
                     &:hover,
                     &:focus {
-                        color: darken(#fff, 20%);
+                        color: #fff;
                     }
                 }
 
@@ -145,9 +173,12 @@
         a {
             background-color: $primary;
             color: #fff;
+            background-color: $primary;
+            border: none;
 
             &:hover {
                 box-shadow: none;
+                background-color: $primary-light;
             }
         }
 

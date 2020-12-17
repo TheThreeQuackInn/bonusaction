@@ -1,0 +1,17 @@
+.user-css-extended {
+    .comment-form {
+        .btn-primary,
+        .btn {
+            background-color: $primary;
+            border-radius: 0;
+            border: none;
+            color: #fff;
+
+            &:hover {
+                background-color: $primary-light;
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+}

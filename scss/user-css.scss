@@ -9,6 +9,45 @@
             text-transform: none;
             border: none;
         }
+
+        .page {
+            background: transparent
+                url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg)
+                no-repeat;
+            color: #333;
+            font-size: 1.7rem;
+            font-family: $font-body;
+        }
+
+        .nav-tabs li {
+            a {
+                background-color: $primary;
+                color: #fff;
+                background-color: $primary;
+                border: none;
+
+                &:hover {
+                    box-shadow: none;
+                    background-color: $primary-light;
+                }
+            }
+
+            &.active a {
+                background-color: $primary-light;
+                color: #fff;
+            }
+        }
+
+        a {
+            color: $primary;
+            transition: 0.2s all;
+
+            &:hover {
+                color: $primary-light;
+                text-decoration: none;
+                transition: 0.2s all;
+            }
+        }
     }
 
     &.page {

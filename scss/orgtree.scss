@@ -1,0 +1,17 @@
+.user-css-extended {
+    .orgtree {
+        li {
+            a {
+                &:hover {
+                    background-color: $primary;
+                    border-color: darken($primary, 5%);
+
+                    + ul li a {
+                        background-color: $primary-light;
+                        border-color: darken($primary-light, 5%);
+                    }
+                }
+            }
+        }
+    }
+}
