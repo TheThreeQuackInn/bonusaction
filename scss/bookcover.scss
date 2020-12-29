@@ -1,11 +1,16 @@
 .user-css {
     .bookcover {
         width: 280px;
-        height: 200px;
+        height: 215px;
+        border-radius: 3 + $border-radius;
+        box-shadow: 0px 2px 10px 0px;
+        border: 2px solid $primary;
+        overflow: hidden;
 
         img {
             opacity: 0.9;
             transition: 0.2s opacity ease-in-out;
+            height: 100% !important;
         }
 
         a:hover {

@@ -1,13 +1,4 @@
 .user-css {
-    @keyframes slideIn {
-        0% {
-            left: -100%;
-        }
-        100% {
-            left: 60px;
-        }
-    }
-
     .ba-nav-bar {
         height: 100%;
         position: fixed;
@@ -41,25 +32,15 @@
             li {
                 display: flex;
 
-                @for $i from 2 through 13 {
-                    &:nth-child(#{$i}) {
-                        a {
-                            animation: slideIn
-                                0.5s
-                                ease
-                                #{$i *
-                                0.05}s
-                                1
-                                normal
-                                forwards;
-                        }
-                    }
-                }
+                a {
+                    display: flex;
+                    width: 100%;
 
-                &:hover {
-                    img {
-                        opacity: 1;
-                        transition: 0.2s opacity ease-in-out;
+                    &:hover {
+                        img {
+                            opacity: 1;
+                            transition: 0.2s opacity ease-in-out;
+                        }
                     }
                 }
             }
@@ -73,7 +54,8 @@
 
             @media screen and (max-width: 768px) {
                 .ba-nav-bar__toggler-text {
-                    display: block;
+                    display: flex !important;
+                    align-items: center;
                 }
             }
         }
@@ -85,11 +67,9 @@
 
             li {
                 display: none;
-                align-items: center;
-                position: relative;
 
                 @media screen and (max-width: 768px) {
-                    &:nth-child(1) {
+                    &:nth-of-type(1) {
                         display: flex;
                     }
                 }
@@ -99,9 +79,10 @@
                 }
 
                 a {
+                    display: none;
                     color: darken(#fff, 20%);
-                    position: absolute;
-                    left: -100%;
+                    display: flex;
+                    align-items: center;
 
                     &:hover,
                     &:focus {
@@ -131,15 +112,15 @@
         }
 
         &__toggler {
-            display: none;
+            display: none !important;
 
             &-text {
-                display: none;
+                display: none !important;
                 color: #fff;
             }
 
             @media screen and (max-width: 768px) {
-                display: block;
+                display: block !important;
             }
         }
 
