@@ -29,23 +29,51 @@
     }
 
     .thales-wrapper {
+        table.thales-table tr.thales-roll-result {
+            background: $primary;
+            transition: 0.1s;
+
+            &:hover {
+                background: $primary-light;
+                transition: 0.1s;
+            }
+
+            td,
+            span {
+                color: #fff;
+            }
+        }
+
         tbody {
             font-size: 1.5rem;
         }
 
         tr.thales-row {
             &:hover {
-                &:nth-child(odd) {
+                &:nth-child(even) {
                     background-color: transparent;
                 }
 
-                &:nth-child(even) {
+                &:nth-child(odd) {
                     background-color: rgba($primary, 0.3);
                 }
             }
 
             .thales-cell {
                 border: none;
+            }
+        }
+
+        &.reverse {
+            display: flex;
+            flex-direction: column-reverse;
+
+            #thales-roll {
+                width: 100%;
+
+                .thales-roll-group {
+                    width: 100%;
+                }
             }
         }
     }

@@ -50,6 +50,11 @@
         }
     }
 
+    #world-maps,
+    #world-timelines {
+        display: none;
+    }
+
     &.page {
         background: #fff;
         background-size: cover;
@@ -81,11 +86,26 @@
                 color: $primary-light;
             }
         }
+
+        .followers-counter {
+            display: none;
+        }
     }
 
     &-followers-counter-number {
         .header-title a {
             display: block;
         }
+    }
+
+    &-whitelabel {
+        position: static;
+        padding: 1em;
+        width: 50%;
+        background: transparent;
+        margin: 0 auto 2rem;
+        color: #fff !important;
+        text-align: center;
+        opacity: 1;
     }
 }

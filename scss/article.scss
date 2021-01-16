@@ -65,11 +65,15 @@
             }
         }
 
-        tr:nth-child(even) td {
+        tr.thales-row:nth-child(odd) td {
             background-color: rgba($primary, 0.3);
         }
 
-        tr:nth-of-type(odd) {
+        tr:nth-of-type(even) {
+            background-color: transparent;
+        }
+
+        thead > tr {
             background-color: transparent;
         }
     }
