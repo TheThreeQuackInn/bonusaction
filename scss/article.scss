@@ -25,6 +25,7 @@
     .article-subheading {
         padding-left: 0;
         font-style: italic;
+        color: $text-color;
     }
 
     .article-content {
@@ -63,10 +64,6 @@
                 font-weight: 400;
                 background: transparent;
             }
-        }
-
-        tr.thales-row:nth-child(odd) td {
-            background-color: rgba($primary, 0.3);
         }
 
         tr:nth-of-type(even) {

@@ -1,4 +1,6 @@
-@import "../../css/variables.scss";
+@import "../../scss/variables.scss";
+
+$seperator-height: 10px;
 
 @font-face {
     font-family: Norse;
@@ -12,6 +14,7 @@
     border-top: 10px solid $border-color;
     border-bottom: 10px solid $border-color;
     color: $primary;
+    max-width: 800px;
 }
 
 .statblock__inner {
@@ -20,7 +23,7 @@
     padding: 2em;
     color: #333;
     font-family: $font-body;
-    max-width: 99%;
+    max-width: 98%;
     margin: 0 auto;
     font-size: 1rem;
 }
@@ -32,7 +35,7 @@
     letter-spacing: 0.2rem;
     font-family: Norse;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .statblock__description {
     margin: 0.5em 0;
@@ -71,13 +74,13 @@
 
 .statblock {
     &__separator {
-        width: 100%;
+        width: 85%;
         position: relative;
-        background-color: $primary;
+        background: $primary;
         margin: 1em 0 1em 8px;
-        height: 16px;
+        height: $seperator-height;
 
-        &:after {
+        &:before {
             transform: rotate(0);
             width: 0;
             right: 100%;
@@ -90,8 +93,17 @@
             pointer-events: none;
             border-color: transparent;
             border-right-color: $primary;
-            border-width: 8px;
+            border-width: 5px;
             margin-top: 0px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: -25%;
+            width: 200px;
+            height: $seperator-height;
+            background: url(https://i.ibb.co/yP8BM25/bg-copy.png);
         }
     }
 

@@ -1,0 +1,39 @@
+.user-css {
+    .dropdown-menu {
+        background-color: #fff;
+
+        a {
+            color: $primary;
+
+            &:hover {
+                color: $primary-light;
+
+                .text-muted {
+                    color: $primary-light;
+                }
+            }
+        }
+
+        .text-muted {
+            color: $primary;
+        }
+
+        li.active {
+            a {
+                color: $primary;
+
+                .text-muted {
+                    color: $primary;
+                }
+
+                &:hover {
+                    color: $primary-light;
+
+                    .text-muted {
+                        color: $primary-light;
+                    }
+                }
+            }
+        }
+    }
+}

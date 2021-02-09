@@ -121,13 +121,11 @@
                 {% endif %}
             </div>
             <div class="statblock__separator"></div>
-
             {% if variables.abilities is defined %}
                 <div class="creature__abilities">
                     {{ variables.abilities }}
                 </div>
             {% endif %}
-
             {% if variables.actions is defined %}
                 <div class="creature__actions">
                     <h3 class="creature__actions-title">
@@ -135,6 +133,26 @@
                     </h3>
                     <div>
                         {{ variables.actions }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if (variables.reactions|length) > 0 %}
+                <div class="creature__actions">
+                    <h3 class="creature__actions-title">
+                        Reactions
+                    </h3>
+                    <div>
+                        {{ variables.reactions }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if (variables.legendary_actions|length) > 0 %}
+                <div class="creature__actions">
+                    <h3 class="creature__actions-title">
+                        Legendary Actions
+                    </h3>
+                    <div>
+                        {{ variables.legendary_actions }}
                     </div>
                 </div>
             {% endif %}
