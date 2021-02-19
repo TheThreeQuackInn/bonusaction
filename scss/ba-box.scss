@@ -1,0 +1,47 @@
+.user-css {
+    .ba-box {
+        background: #a5c4ca;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        position: relative;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+
+        &-inner {
+            box-shadow: inset 0px 0px 1px black;
+            padding: 1em;
+        }
+
+        &-left,
+        &-right {
+            position: absolute;
+            top: -5px;
+            bottom: -5px;
+            width: 20px;
+            background-color: #000;
+            z-index: -1;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        &-left {
+            left: 0;
+            border-radius: 0 27px 27px 0;
+        }
+
+        &-right {
+            right: 0;
+            border-radius: 27px 0 0 27px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            font-size: 3.5rem;
+        }
+    }
+}

@@ -32,6 +32,10 @@
         font-size: 1.1em;
         line-height: 1.4em;
 
+        &-left {
+            z-index: 0;
+        }
+
         .table-header {
             font-family: $font-table-header;
             font-variant: small-caps;
