@@ -22,10 +22,10 @@ $seperator-height: 10px;
     background-color: #efefef;
     padding: 2em;
     color: #333;
-    font-family: $font-body;
+    font-family: Nunito;
     max-width: 98%;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .statblock__inner h1 {
@@ -35,7 +35,7 @@ $seperator-height: 10px;
     letter-spacing: 0.2rem;
     font-family: Norse;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 .statblock__description {
     margin: 0.5em 0;
@@ -53,7 +53,7 @@ $seperator-height: 10px;
 .statblock__subtitle {
     font-style: italic;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: $primary;
 }
 .statblock__left {
@@ -109,7 +109,7 @@ $seperator-height: 10px;
 
     &__line {
         color: $primary;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
 
         .bold {
             font-weight: 700;
@@ -141,7 +141,7 @@ $seperator-height: 10px;
         &-title {
             color: $primary;
             border-bottom: 1px solid $primary;
-            font-size: 1.3rem;
+            font-size: 2rem;
         }
     }
 }
