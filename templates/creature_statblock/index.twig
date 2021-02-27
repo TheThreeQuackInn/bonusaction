@@ -89,10 +89,28 @@
                         <span>{{ variables.skills }}</span>
                     </div>
                 {% endif %}
+                {% if variables.damage_vulnerabilities is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Damage vulnerabilities</span>
+                        <span>{{ variables.damage_vulnerabilities }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.damage_immunities is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Damage immunities</span>
+                        <span>{{ variables.damage_immunities }}</span>
+                    </div>
+                {% endif %}
                 {% if variables.damage_resistances is defined %}
                     <div class="statblock__line">
                         <span class="bold">Damage resistances</span>
                         <span>{{ variables.damage_resistances }}</span>
+                    </div>
+                {% endif %}
+                {% if variables.condition_immunities is defined %}
+                    <div class="statblock__line">
+                        <span class="bold">Condition immunities</span>
+                        <span>{{ variables.condition_immunities }}</span>
                     </div>
                 {% endif %}
                 {% if variables.condition_immunities is defined %}

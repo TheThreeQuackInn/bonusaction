@@ -48,6 +48,21 @@
                 transition: 0.2s all;
             }
         }
+
+        .label-default {
+            color: $primary;
+            background: transparent;
+            border: 1px solid $primary;
+            display: inline-flex;
+            margin: 3px 0;
+            line-height: 0.8em;
+
+            &:hover {
+                color: $primary-light;
+                border-color: $primary-light;
+                background: rgba(255, 255, 255, 0.1);
+            }
+        }
     }
 
     #world-maps,

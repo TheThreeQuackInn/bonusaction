@@ -1,0 +1,25 @@
+.user-css .article-content {
+    .table {
+        table-layout: auto;
+
+        tr:nth-child(odd) {
+            background: transparent;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba($primary, 0.3);
+            transition: 0.1s all;
+
+            &:hover {
+                background-color: rgba($primary, 0.4);
+                transition: 0.1s all;
+            }
+        }
+
+        td,
+        th {
+            display: inline-flex;
+            min-width: 87px;
+        }
+    }
+}
