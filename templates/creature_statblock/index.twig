@@ -83,7 +83,7 @@
             </div>
             <div class="statblock__separator"></div>
             <div class="creature__meta">
-                {% if variables.skills is defined %}
+                {% if (variables.skills|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Skills</span>
                         <span>{{ variables.skills }}</span>
@@ -105,12 +105,6 @@
                     <div class="statblock__line">
                         <span class="bold">Damage resistances</span>
                         <span>{{ variables.damage_resistances }}</span>
-                    </div>
-                {% endif %}
-                {% if variables.condition_immunities is defined %}
-                    <div class="statblock__line">
-                        <span class="bold">Condition immunities</span>
-                        <span>{{ variables.condition_immunities }}</span>
                     </div>
                 {% endif %}
                 {% if variables.condition_immunities is defined %}
