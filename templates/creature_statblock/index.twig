@@ -89,27 +89,27 @@
                         <span>{{ variables.skills }}</span>
                     </div>
                 {% endif %}
-                {% if variables.damage_vulnerabilities is defined %}
+                {% if (variables.damage_vulnerabilities|length) > 0 %}
                     <div class="statblock__line">
-                        <span class="bold">Damage vulnerabilities</span>
+                        <span class="bold">Damage Vulnerabilities</span>
                         <span>{{ variables.damage_vulnerabilities }}</span>
                     </div>
                 {% endif %}
-                {% if variables.damage_immunities is defined %}
+                {% if (variables.damage_immunities|length) > 0 %}
                     <div class="statblock__line">
-                        <span class="bold">Damage immunities</span>
+                        <span class="bold">Damage Immunities</span>
                         <span>{{ variables.damage_immunities }}</span>
                     </div>
                 {% endif %}
-                {% if variables.damage_resistances is defined %}
+                {% if (variables.damage_resistances|length) > 0 %}
                     <div class="statblock__line">
-                        <span class="bold">Damage resistances</span>
+                        <span class="bold">Damage Resistances</span>
                         <span>{{ variables.damage_resistances }}</span>
                     </div>
                 {% endif %}
-                {% if variables.condition_immunities is defined %}
+                {% if (variables.condition_immunities|length) > 0 %}
                     <div class="statblock__line">
-                        <span class="bold">Condition immunities</span>
+                        <span class="bold">Condition Immunities</span>
                         <span>{{ variables.condition_immunities }}</span>
                     </div>
                 {% endif %}
