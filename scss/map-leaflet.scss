@@ -1,0 +1,39 @@
+.leaflet-popup-content h5 {
+    font-family: Nunito, sans-serif;
+    text-transform: none;
+}
+.map-context-user-css {
+    background: transparent;
+}
+.map-included {
+    border: 0 solid;
+    border-radius: 10px;
+    background: #ffffff60;
+    -webkit-box-shadow: 0 0 10px #44444420;
+    box-shadow: 0 0 10px #44444420;
+    padding: 15px;
+}
+.user-css-map-sidebar h1 {
+    font-family: Norse, sans-serif;
+    color: $primary;
+    font-size: 2.3rem;
+}
+.user-css-map-sidebar h3 {
+    font-family: Knucklehead, sans-serif;
+    color: $primary;
+    font-size: 2.3rem;
+}
+.user-css-map-sidebar p {
+    font-family: Nunito, sans-serif;
+    color: #333;
+}
+.user-css-map-sidebar .p-4 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.presentation-interface {
+    color: #333;
+}
+.presentation-interface hr {
+    border-color: rgba(#333, 0.3);
+}

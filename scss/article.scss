@@ -36,6 +36,12 @@
             z-index: 0;
         }
 
+        &-right {
+            .img-responsive {
+                margin: 0 auto;
+            }
+        }
+
         .table-header {
             font-family: $font-table-header;
             font-variant: small-caps;

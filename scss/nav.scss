@@ -169,3 +169,15 @@
         }
     }
 }
+
+.presentation-interface {
+    .nav {
+        &-strip {
+            background-color: $primary;
+
+            &:hover {
+                background-color: $primary-light;
+            }
+        }
+    }
+}
