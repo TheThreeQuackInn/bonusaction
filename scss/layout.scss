@@ -46,4 +46,42 @@
     .author {
         display: none;
     }
+
+    blockquote {
+        background-color: rgba(255, 255, 255, 0.38);
+        border-color: $primary;
+        color: $text-color;
+        margin: 1em 0;
+        font-family: $font-body;
+        font-size: 1.7rem;
+        padding-bottom: 0.5em;
+
+        .author {
+            display: block;
+            font-family: $font-body;
+            color: $text-color;
+            font-size: 0.9em;
+        }
+    }
+
+    .aloud {
+        border: none;
+        color: $text-color;
+        background-color: #a5c4ca;
+        font-family: $font-body;
+        padding: 1em;
+        font-size: 1.7rem;
+    }
+
+    &.page-article.template-item {
+        .article-content-left + .col-md-4 {
+            @media screen and (min-width: 992px) {
+                margin-top: -90px;
+            }
+        }
+    }
+
+    .credit-artist-name {
+        color: $text-color;
+    }
 }

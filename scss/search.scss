@@ -14,4 +14,12 @@
             border-radius: 0 3px 3px 0;
         }
     }
+
+    &.page-search {
+        #image-search-results,
+        #map-search-results,
+        #histories-search-results {
+            display: none;
+        }
+    }
 }
