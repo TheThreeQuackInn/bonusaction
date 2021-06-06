@@ -34,4 +34,20 @@
             border-radius: 3px;
         }
     }
+
+    .btn-auth {
+        a {
+            background-color: $primary;
+            font-family: $font-body;
+            border-radius: $border-radius;
+            padding: 9px 15px;
+            color: #fff;
+            font-size: 0.75em;
+
+            &:hover {
+                background-color: $primary-light;
+                color: #fff;
+            }
+        }
+    }
 }
