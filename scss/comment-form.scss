@@ -1,4 +1,10 @@
 .user-css-extended {
+    @media screen and (min-width: 992px) and (max-width: 1250px) {
+        .extendedbody-comments {
+            padding-left: 50px;
+        }
+    }
+
     .comment-form {
         .btn-primary,
         .btn {

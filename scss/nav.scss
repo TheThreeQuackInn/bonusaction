@@ -13,7 +13,7 @@
         overflow-x: hidden;
         z-index: 99999;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             height: auto;
             bottom: auto;
             top: 114px;
@@ -23,9 +23,8 @@
 
         &:hover {
             width: 220px;
-            top: 0;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 992px) {
                 height: 100%;
                 bottom: 0;
             }
@@ -53,7 +52,7 @@
                 transition-delay: 0.1s;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 992px) {
                 .ba-nav-bar__toggler-text {
                     display: flex !important;
                     align-items: center;
@@ -69,13 +68,13 @@
             li {
                 display: none;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 992px) {
                     &:nth-of-type(1) {
                         display: flex;
                     }
                 }
 
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 992px) {
                     display: flex;
                 }
 
@@ -120,7 +119,7 @@
                 color: #fff;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 992px) {
                 display: block !important;
             }
         }
@@ -151,22 +150,24 @@
         }
     }
 
-    .nav-tabs li {
-        a {
-            background-color: $primary;
-            color: #fff;
-            background-color: $primary;
-            border: none;
+    .nav-tabs {
+        li {
+            a {
+                background-color: $primary;
+                color: #fff;
+                background-color: $primary;
+                border: none;
 
-            &:hover {
-                box-shadow: none;
-                background-color: $primary-light;
+                &:hover {
+                    box-shadow: none;
+                    background-color: $primary-light;
+                }
             }
-        }
 
-        &.active a {
-            background-color: $primary-light;
-            color: #fff;
+            &.active a {
+                background-color: $primary-light;
+                color: #fff;
+            }
         }
     }
 
@@ -197,5 +198,11 @@
                 background-color: $primary-light;
             }
         }
+    }
+}
+
+.user-css-extended {
+    @media screen and (min-width: 992px) and (max-width: 1250px) {
+        padding-left: 32px;
     }
 }
