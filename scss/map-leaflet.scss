@@ -9,8 +9,7 @@
     border: 0 solid;
     border-radius: 10px;
     background: #ffffff60;
-    -webkit-box-shadow: 0 0 10px #44444420;
-    box-shadow: 0 0 10px #44444420;
+    box-shadow: $box-shadow;
     padding: 15px;
 }
 .user-css-map-sidebar h1 {

@@ -11,19 +11,19 @@
                 <div class="statblock__separator"></div>
             </div>
             <div class="creature__stats">
-                {% if variables.armor_class_ac is defined %}
+                {% if (variables.armor_class_ac|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Armor Class</span>
                         <span>{{ variables.armor_class_ac }}</span>
                     </div>
                 {% endif %}
-                {% if variables.hit_points_hp is defined %}
+                {% if (variables.hit_points_hp|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Hit Points</span>
                         <span>{{ variables.hit_points_hp }}</span>
                     </div>
                 {% endif %}
-                {% if variables.speed is defined %}
+                {% if (variables.speed|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Speed</span>
                         <span>{{ variables.speed }}</span>
@@ -113,19 +113,19 @@
                         <span>{{ variables.condition_immunities }}</span>
                     </div>
                 {% endif %}
-                {% if variables.senses is defined %}
+                {% if (variables.senses|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Senses</span>
                         <span>{{ variables.senses }}</span>
                     </div>
                 {% endif %}
-                {% if variables.languages is defined %}
+                {% if (variables.languages|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Languages</span>
                         <span>{{ variables.languages }}</span>
                     </div>
                 {% endif %}
-                {% if variables.challenge_rating_cr is defined %}
+                {% if (variables.challenge_rating_cr|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Challenge</span>
                         <span>{{ variables.challenge_rating_cr }}</span>
@@ -133,12 +133,12 @@
                 {% endif %}
             </div>
             <div class="statblock__separator"></div>
-            {% if variables.abilities is defined %}
+            {% if (variables.abilities|length) > 0 %}
                 <div class="creature__abilities">
                     {{ variables.abilities }}
                 </div>
             {% endif %}
-            {% if variables.actions is defined %}
+            {% if (variables.actions|length) > 0 %}
                 <div class="creature__actions">
                     <h3 class="creature__actions-title">
                         Actions
