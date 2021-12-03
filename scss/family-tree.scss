@@ -13,12 +13,27 @@
         --characterPortraitInnerBorder: none;
         --rootNodeBg: rgba(255, 255, 255, 0.38);
         --rootNodeBorder: none;
+        --characterDatesColor: #{$text-color};
         box-shadow: #{$box-shadow};
 
         .main-character {
             --characterLabelBg: #{$primary-light};
             --characterNameColor: #fff;
             --characterNameBorder: none;
+            --characterDatesColor: #fff;
+        }
+
+        .rhea-character-node .character-portrait {
+            &-wrapper {
+                background-color: #fff;
+                background-image: url(https://www.worldanvil.com/uploads/images/d32e599d89ee2b5280d470fe9700342b.jpg);
+                background-size: contain;
+
+
+                [src*=placeholder] {
+                    display: none;
+                }
+            }
         }
     }
 }

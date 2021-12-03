@@ -82,6 +82,12 @@
                 </div>
             </div>
             <div class="statblock__separator"></div>
+            {% if (variables.saving_throws|length) > 0 %}
+                <div class="statblock__line">
+                    <span class="bold">Saving throws</span>
+                    {{ variables.saving_throws }}
+                </div>
+            {% endif %}
             <div class="creature__meta">
                 {% if (variables.skills|length) > 0 %}
                     <div class="statblock__line">
