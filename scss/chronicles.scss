@@ -1,0 +1,67 @@
+.user-css {
+    .chronos-world-title-box {
+        border-top-color: $primary;
+    }
+
+    .chronos-chronicle-title .chronos-chronicle-title-box {
+        border-top-color: #f1f1f1;
+    }
+
+    .chronos-chronicle-title .chronos-chronicle-name {
+        color: $primary;
+        margin-top: 0.4rem;
+    }
+
+    .chronicle-history-dial .chronicle-history-display .chronicle-date-display {
+        background-color: $primary;
+    }
+
+    .chronicle-history-dial {
+        background-color: $primary;
+    }
+
+    .chronos-container {
+        background-color: #f9f9f9;
+    }
+
+    .chronos-timelines-container-component .chronos-timeline-navigation-button {
+        background-color: #f1f1f1;
+
+    }
+
+    .chronos-history-container {
+        background-color: #e1e1e1;
+    }
+
+    .chronos-timeline-lane {
+        background-color: #d4d4d4;
+    }
+
+    .chronos-timelines-container-component .chronos-timeline-wrapper .chronos-timeline-slots .chronos-timeline-slot .chronos-timeline-title {
+        background-color: $primary;
+    }
+
+    .chronos-timelines-container-component .chronos-timeline-wrapper .chronos-timeline-slots .chronos-timeline-slot .chronos-timeline-title .chronos-timeline-options .chronos-btn i {
+        color: #fff;
+    }
+
+    .chronos-modal-title {
+        background-color: $primary;
+    }
+
+    .chronos-form-checkbox.chronos-custom-checkbox.chronos-checkbox-checked {
+        background-color: $primary;
+    }
+
+    button.chronos-btn.chronos-btn-primary {
+        background-color: $primary;
+    }
+
+    .chronos-modal .chronos-modal-content {
+       background-color: #f9f9f9;
+    }
+
+    .chronos-chronicle-toolbar > .chronicle-toolbar-button:hover {
+        background-color: $primary;
+    }
+}
