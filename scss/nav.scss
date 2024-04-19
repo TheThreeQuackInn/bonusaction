@@ -205,4 +205,12 @@
     @media screen and (min-width: 992px) and (max-width: 1250px) {
         padding-left: 32px;
     }
+
+    .nav-tabs li.nav-item>a.nav-link {
+        background: $primary;
+
+        &:hover {
+            background: $primary-light;
+        }
+    }
 }

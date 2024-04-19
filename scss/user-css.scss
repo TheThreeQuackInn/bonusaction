@@ -12,30 +12,11 @@
 
         .page {
             background: transparent
-                url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg)
+                url(https://www.worldanvil.com/i/1286422/render)
                 repeat-y;
             color: #333;
             font-size: 1.7rem;
             font-family: $font-body;
-        }
-
-        .nav-tabs li {
-            a {
-                background-color: $primary;
-                color: #fff;
-                background-color: $primary;
-                border: none;
-
-                &:hover {
-                    box-shadow: none;
-                    background-color: $primary-light;
-                }
-            }
-
-            &.active a {
-                background-color: $primary-light;
-                color: #fff;
-            }
         }
 
         a {
@@ -46,6 +27,24 @@
                 color: $primary-light;
                 text-decoration: none;
                 transition: 0.2s all;
+            }
+        }
+
+        .nav-tabs li {
+            a {
+                background-color: $primary !important;
+                color: #fff;
+                border: none;
+
+                &:hover {
+                    box-shadow: none;
+                    background-color: $primary-light !important;
+                }
+            }
+
+            &.active a {
+                background-color: $primary-light;
+                color: #fff;
             }
         }
 
@@ -76,13 +75,13 @@
         color: #333;
         font-size: 1.7rem;
         font-family: $font-body;
-        background: url(https://www.worldanvil.com/uploads/images/8993a99f5c51edfde088888cee9eb8a8.jpg);
+        background: url(https://www.worldanvil.com/i/1286422/render);
         border: 2px $primary solid;
         border-radius: $border-radius;
     }
 
     &-presentation {
-        background: url(https://www.worldanvil.com/uploads/images/b9c5adb195a34f33831c37120044db1d.jpg);
+        background: url(https://www.worldanvil.com/i/1653952/render);
         background-size: cover;
         background-attachment: fixed;
 
