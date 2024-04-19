@@ -1,8 +1,12 @@
 {
+    "scripts": {
+        "build:css": "sass scss/stylesheet.scss css/stylesheet.css --style compressed --no-source-map"
+    },
     "devDependencies": {
         "husky": "4.2.5",
         "lint-staged": "10.2.11",
-        "prettier-plugin-twig-melody": "0.4.6"
+        "prettier-plugin-twig-melody": "0.4.6",
+        "sass": "^1.75.0"
     },
     "lint-staged": {
         "*.{twig,scss}": [
