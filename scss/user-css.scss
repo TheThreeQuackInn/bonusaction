@@ -12,8 +12,7 @@
 
         .page {
             background: transparent
-                url(https://www.worldanvil.com/i/1286422/render)
-                repeat-y;
+                url(https://www.worldanvil.com/i/1286422/render) repeat-y;
             color: #333;
             font-size: 1.7rem;
             font-family: $font-body;
@@ -66,6 +65,11 @@
 
     #world-maps,
     #world-timelines {
+        display: none;
+    }
+
+    .stickers-article-collection,
+    #sticker-menu-toggle {
         display: none;
     }
 
