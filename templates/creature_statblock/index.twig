@@ -144,6 +144,16 @@
                     {{ variables.abilities }}
                 </div>
             {% endif %}
+            {% if (variables.bonus_action|length) > 0 %}
+                <div class="creature__actions">
+                    <h3 class="creature__actions-title">
+                        Bonus Action
+                    </h3>
+                    <div>
+                        {{ variables.bonus_action }}
+                    </div>
+                </div>
+            {% endif %}
             {% if (variables.actions|length) > 0 %}
                 <div class="creature__actions">
                     <h3 class="creature__actions-title">
