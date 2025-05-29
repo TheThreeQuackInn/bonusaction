@@ -101,16 +101,16 @@
                         <span>{{ variables.damage_vulnerabilities }}</span>
                     </div>
                 {% endif %}
-                {% if (variables.damage_immunities|length) > 0 %}
-                    <div class="statblock__line">
-                        <span class="bold">Damage Immunities</span>
-                        <span>{{ variables.damage_immunities }}</span>
-                    </div>
-                {% endif %}
                 {% if (variables.damage_resistances|length) > 0 %}
                     <div class="statblock__line">
                         <span class="bold">Damage Resistances</span>
                         <span>{{ variables.damage_resistances }}</span>
+                    </div>
+                {% endif %}
+                {% if (variables.damage_immunities|length) > 0 %}
+                    <div class="statblock__line">
+                        <span class="bold">Damage Immunities</span>
+                        <span>{{ variables.damage_immunities }}</span>
                     </div>
                 {% endif %}
                 {% if (variables.condition_immunities|length) > 0 %}
